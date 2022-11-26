@@ -1,0 +1,14 @@
+query ProductReviews {
+  product(sku: "${sku}") {
+    name
+    image
+  }
+  reviews(sku: "${sku}") {
+    reviews {
+      comments
+      name
+      stars
+    }
+    stars
+  }
+}
